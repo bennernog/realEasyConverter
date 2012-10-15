@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundrec"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/MenuButtons"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:padding="2dip" >
+
+        <ImageButton
+            android:id="@+id/imageButtonDistance"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/btnDistance"
+            android:scaleType="centerInside"
+            android:src="@drawable/distance" />
+
+        <ImageButton
+            android:id="@+id/imageButtonTemperature"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/btnTemperature"
+            android:scaleType="centerInside"
+            android:src="@drawable/temperature_small" />
+
+        <ImageButton
+            android:id="@+id/imageButtonWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/btnWeight"
+            android:scaleType="centerInside"
+            android:src="@drawable/weight" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/EditTextCelsius"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:freezesText="true"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/celcius" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/EditTextFahrenheit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:freezesText="true"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:selectAllOnFocus="true" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/fahrenheit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/EditTextKelvin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:freezesText="true"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/kelvin" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

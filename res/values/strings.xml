@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">realEasyConverter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="meter">m</string>
+    <string name="kilometer">km</string>
+    <string name="centimeter">cm</string>
+    <string name="miles">mile</string>
+    <string name="feet">ft</string>
+    <string name="inches">inch</string>
+    <string name="yards">yd</string>
+    <string name="celcius">°C</string>
+    <string name="fahrenheit">°F</string>
+    <string name="kelvin">°K</string>
+    <string name="kilo">kg</string>
+    <string name="gram">g</string>
+    <string name="ton">t</string>
+    <string name="pound">lb</string>
+    <string name="ounces">oz</string>
+    <string name="stone">st</string>
+    <string name="btnDistance">Distance</string>
+    <string name="btnWeight">Weight</string>
+    <string name="btnTemperature">Temperature</string>
+
+</resources>

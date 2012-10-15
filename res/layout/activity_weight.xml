@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundrec"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/MenuButtons"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:padding="2dip" >
+
+        <ImageButton
+            android:id="@+id/imageButtonDistance"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/btnDistance"
+            android:scaleType="centerInside"
+            android:src="@drawable/distance" />
+
+        <ImageButton
+            android:id="@+id/imageButtonTemperature"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/btnTemperature"
+            android:scaleType="centerInside"
+            android:src="@drawable/temperature" />
+
+        <ImageButton
+            android:id="@+id/imageButtonWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/btnWeight"
+            android:scaleType="centerInside"
+            android:src="@drawable/weight_small" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/meter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <EditText
+                android:id="@+id/EditTextKilo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dip"
+                android:layout_weight="1"
+                android:ems="10"
+                android:freezesText="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:id="@+id/TextViewKilo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dip"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:paddingLeft="22dip"
+                android:paddingRight="22dip"
+                android:text="@string/kilo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/EditTextPound"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:freezesText="true"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="4"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/pound" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editTextOunces"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:freezesText="true"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:selectAllOnFocus="true" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="4"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/ounces" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
